@@ -3,11 +3,15 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
 	width: 65vw;
-    height: 95vh;
+    height: 100vh;
 	background-color: #FFF;
     display: flex;
     flex-direction: column;
@@ -16,43 +20,112 @@ body {
 .content{
     width: 100%;
     height: 35%;
-    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .yellow{
     width: 100%;
-    height: 55%;
+    height: 60%;
     display: flex;
     flex-direction: row;
 }
 
 .green {
     width: 15%;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li button {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(to bottom, #bbcfaa, #75c754); /* Cambia los colores según tus preferencias */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Agrega un efecto de transición para el cambio de color */
+}
+
+li button:hover {
+    background: linear-gradient(to bottom, #f09e40, #75c754); /* Cambia los colores para el desvanecimiento */
 }
 
 .pink {
-    width: 85%;
+    width: 80%;
+    height: 95%;
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #D3D3D3;
 }
 
 .content-text {
-    margin-left: 15px;
-    margin-bottom: 10px;
-    height: 70%;
+    height: 90%;
+    border: 1px´;
 }
 
 .content-subtitle{
-    height: 20%;
+    height: 10%;
 }
 .black {
-    width: 100%;
-    height: 10%;
-    background-color: gray;
+    color: rgba(122, 116, 116, 0.7); 
+    text-align: center;
+    height: 5%;
 }
 
 ul {
     list-style-type: none;
   }
 
+.content-text {
+    width: 100%;
+    height: 85%;
+    border: 1px; 
+    overflow: auto;
+    word-wrap: break-word;
+    margin: 0;
+}
+.content-text p {
+    margin: 0; 
+    padding: 10px;
+}
 
+.blue{
+    font-size: 36px;
+    color: #5F8F11;
+}
+
+span{
+    color: #bf823b;
+}
+
+
+.subtitle{
+    width: auto;
+    color: #70AF0A;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CFDFB5;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
